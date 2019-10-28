@@ -9,6 +9,8 @@ public abstract class Pet implements Animal {
      * by default, pet has age of 0; name of "";
      */
     public Pet() {
+        String name = "";
+        Integer age = 0;
     }
 
     /**
@@ -22,11 +24,12 @@ public abstract class Pet implements Animal {
      * @param age age of this pet
      */
     public Pet(int age) {
+
     }
 
     /**
      * @param name name of this pet
-     * @param age age of this pet
+     * @param age  age of this pet
      */
     public Pet(String name, int age) {
     }
@@ -35,19 +38,19 @@ public abstract class Pet implements Animal {
      * @return name of this pet
      */
     public String getName() {
-        return null;
+        return "";
     }
 
     /**
      * @return age of this pet
      */
     public Integer getAge() {
-        return null;
+        return 0;
     }
 
     /**
      * @param newPetOwner the new owner of this pet
-     * ensure this instance of `Pet` is added to the owner's composite `pets` list
+     *                    ensure this instance of `Pet` is added to the owner's composite `pets` list
      */
     public void setOwner(PetOwner newPetOwner) {
     }
@@ -56,6 +59,6 @@ public abstract class Pet implements Animal {
      * @return PetOwner object whose composite `pets` collection contains this Pet instance
      */
     public PetOwner getOwner() {
-        return null;
+        return getOwner();
     }
 }
